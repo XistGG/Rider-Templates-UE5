@@ -7,3 +7,6 @@
 	: Super(ObjectInitializer)
 {
 }
+
+
+%CURSORFOCUSLOCATION%

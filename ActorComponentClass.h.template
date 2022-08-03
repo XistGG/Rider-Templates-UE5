@@ -10,7 +10,7 @@
 /**
  * %UNPREFIXED_CLASS_NAME%
  *
- * 
+ * %CURSORFOCUSLOCATION%
  */
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class %CLASS_MODULE_API_MACRO%%PREFIXED_CLASS_NAME% : public %PREFIXED_BASE_CLASS_NAME%
