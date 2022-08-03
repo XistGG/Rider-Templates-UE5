@@ -1,0 +1,10 @@
+%COPYRIGHT_LINE%
+
+using UnrealBuildTool;
+
+public class %BASE_MODULE_NAME%_%PLATFORM_NAME% : %PARENT_MODULE_NAME%
+{
+	public %BASE_MODULE_NAME%_%PLATFORM_NAME%(ReadOnlyTargetRules Target) : base(Target)
+	{
+	}
+}

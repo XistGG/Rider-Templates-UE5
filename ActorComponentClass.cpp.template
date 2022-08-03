@@ -1,0 +1,35 @@
+%COPYRIGHT_LINE%
+
+%PCH_INCLUDE_DIRECTIVE%
+%MY_HEADER_INCLUDE_DIRECTIVE%
+%ADDITIONAL_INCLUDE_DIRECTIVES%
+
+
+// Sets default values for this component's properties
+%PREFIXED_CLASS_NAME%::%PREFIXED_CLASS_NAME%(const FObjectInitializer& ObjectInitializer)
+	: Super(ObjectInitializer)
+{
+	// If you want this component to tick, you must explicitly enable it
+	PrimaryComponentTick.bCanEverTick = false;
+
+	// ...
+}
+
+
+// Called when the game starts
+void %PREFIXED_CLASS_NAME%::BeginPlay()
+{
+	Super::BeginPlay();
+
+	// ...
+	%CURSORFOCUSLOCATION%
+}
+
+
+// Called every frame
+void %PREFIXED_CLASS_NAME%::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
+{
+	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+
+	// ...
+}

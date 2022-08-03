@@ -1,0 +1,9 @@
+%COPYRIGHT_LINE%
+
+%MY_HEADER_INCLUDE_DIRECTIVE%
+
+
+%PREFIXED_CLASS_NAME%::%PREFIXED_CLASS_NAME%(const FObjectInitializer& ObjectInitializer)
+	: Super(ObjectInitializer)
+{
+}
