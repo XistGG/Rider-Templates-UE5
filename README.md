@@ -1,5 +1,7 @@
 # Rider Templates for UE5
 
+Source: https://github.com/XistGG/Rider-Templates-UE5
+
 When Rider first starts up, it reads `Engine/Content/Editor/Templates/*.template` to initialize the
 template files to use for UE5.
 

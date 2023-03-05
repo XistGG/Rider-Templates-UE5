@@ -1,6 +1,0 @@
-%COPYRIGHT_LINE%
-
-#pragma once
-
-#include "CoreMinimal.h"
-%PUBLIC_HEADER_INCLUDES%

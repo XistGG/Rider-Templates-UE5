@@ -10,25 +10,15 @@
 /**
  * %UNPREFIXED_CLASS_NAME%
  *
- * %CURSORFOCUSLOCATION%
+ *
  */
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class %CLASS_MODULE_API_MACRO%%PREFIXED_CLASS_NAME% : public %PREFIXED_BASE_CLASS_NAME%
+UCLASS(meta=(BlueprintSpawnableComponent))
+class %CLASS_MODULE_API_MACRO%%PREFIX%%UNPREFIXED_CLASS_NAME% : public %PREFIXED_BASE_CLASS_NAME%
 {
 	GENERATED_BODY()
 
-public:	
-	// Sets default values for this component's properties
-	%PREFIXED_CLASS_NAME%();
+public:
+	// Set Class Defaults
+	%PREFIX%%UNPREFIXED_CLASS_NAME%(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
 
-protected:
-	// Called when the game starts
-	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
-
-	%CLASS_FUNCTION_DECLARATIONS%	
-	%CLASS_PROPERTIES%
 };

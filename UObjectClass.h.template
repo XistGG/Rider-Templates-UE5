@@ -10,15 +10,15 @@
 /**
  * %UNPREFIXED_CLASS_NAME%
  *
- * %CURSORFOCUSLOCATION%
+ *
  */
-UCLASS(%UCLASS_SPECIFIER_LIST%)
-class %CLASS_MODULE_API_MACRO%%PREFIXED_CLASS_NAME% : public %PREFIXED_BASE_CLASS_NAME%
+UCLASS()
+class %CLASS_MODULE_API_MACRO%%PREFIX%%UNPREFIXED_CLASS_NAME% : public %PREFIXED_BASE_CLASS_NAME%
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
 public:
-	// Set defaults
-	%PREFIXED_CLASS_NAME%(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
+    // Set Class Defaults
+    %PREFIX%%UNPREFIXED_CLASS_NAME%(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
 
 };
