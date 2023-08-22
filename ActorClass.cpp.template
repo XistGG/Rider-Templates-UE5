@@ -1,10 +1,17 @@
 %COPYRIGHT_LINE%
 
+%PCH_INCLUDE_DIRECTIVE%
 %MY_HEADER_INCLUDE_DIRECTIVE%
+%ADDITIONAL_INCLUDE_DIRECTIVES%
 
 
 // Set Class Defaults
-%PREFIXED_CLASS_NAME%::%PREFIXED_CLASS_NAME%(const FObjectInitializer& ObjectInitializer)
+%PREFIXED_CLASS_NAME%::%PREFIXED_CLASS_NAME%(const FObjectInitializer& ObjectInitializer) 
 	: Super(ObjectInitializer)
 {
+	PrimaryActorTick.bCanEverTick = false;
+	PrimaryActorTick.bStartWithTickEnabled = false;
 }
+
+
+%ADDITIONAL_MEMBER_DEFINITIONS%

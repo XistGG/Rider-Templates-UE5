@@ -9,16 +9,16 @@
 
 /**
  * %UNPREFIXED_CLASS_NAME%
- *
- *
  */
 UCLASS(meta=(BlueprintSpawnableComponent))
-class %CLASS_MODULE_API_MACRO%%PREFIX%%UNPREFIXED_CLASS_NAME% : public %PREFIXED_BASE_CLASS_NAME%
+class %CLASS_MODULE_API_MACRO%%PREFIXED_CLASS_NAME% : public %PREFIXED_BASE_CLASS_NAME%
 {
 	GENERATED_BODY()
 
 public:
 	// Set Class Defaults
-	%PREFIX%%UNPREFIXED_CLASS_NAME%(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
+	%PREFIXED_CLASS_NAME%(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
 
+	%CLASS_FUNCTION_DECLARATIONS%
+	%CLASS_PROPERTIES%
 };

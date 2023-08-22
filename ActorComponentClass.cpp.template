@@ -1,6 +1,8 @@
 %COPYRIGHT_LINE%
 
+%PCH_INCLUDE_DIRECTIVE%
 %MY_HEADER_INCLUDE_DIRECTIVE%
+%ADDITIONAL_INCLUDE_DIRECTIVES%
 
 
 // Set Class Defaults
@@ -10,3 +12,6 @@
 	PrimaryComponentTick.bCanEverTick = false;
 	PrimaryComponentTick.bStartWithTickEnabled = false;
 }
+
+
+%ADDITIONAL_MEMBER_DEFINITIONS%
