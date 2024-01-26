@@ -16,13 +16,13 @@ for more details on how to clear only the template cache without losing other pr
 ## Example Output
 
 - {   [h](#actor-header)
-  | [cpp](#actor-source)        } **Actor**
-- {   [h](#actor-component-h)
-  | [cpp](#actor-component-cpp) } **Actor Component**
-- {   [h](#interface-h)
-  | [cpp](#interface-cpp)       } **Interface**
-- {   [h](#object-h)
-  | [cpp](#object-cpp)          } **Object**
+  | [cpp](#actor-source)           } **Actor**
+- {   [h](#actor-component-header)
+  | [cpp](#actor-component-source) } **Actor Component**
+- {   [h](#interface-header)
+  | [cpp](#interface-source)       } **Interface**
+- {   [h](#object-header)
+  | [cpp](#object-source)          } **Object**
 
 # Using this repo
 
