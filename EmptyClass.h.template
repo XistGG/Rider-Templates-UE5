@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 
 /**
- * %CURSORFOCUSLOCATION%
+ * %UNPREFIXED_CLASS_NAME%
  */
 class %CLASS_MODULE_API_MACRO%%UNPREFIXED_CLASS_NAME%
 {

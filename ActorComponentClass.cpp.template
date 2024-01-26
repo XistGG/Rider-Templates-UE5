@@ -1,17 +1,14 @@
 %COPYRIGHT_LINE%
 
-%PCH_INCLUDE_DIRECTIVE%
 %MY_HEADER_INCLUDE_DIRECTIVE%
-%ADDITIONAL_INCLUDE_DIRECTIVES%
-
 
 // Set Class Defaults
 %PREFIXED_CLASS_NAME%::%PREFIXED_CLASS_NAME%(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {
+	// For performance reasons, don't tick components unless you really need to
 	PrimaryComponentTick.bCanEverTick = false;
 	PrimaryComponentTick.bStartWithTickEnabled = false;
 }
-
 
 %ADDITIONAL_MEMBER_DEFINITIONS%
