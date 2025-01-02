@@ -11,7 +11,7 @@ for changes to the templates to take effect, you need to clear out Rider's cache
 You can either remove the entire `.idea` directory and relaunch Rider, or you can see
 [this forum post](https://rider-support.jetbrains.com/hc/en-us/community/posts/360010619699/comments/4410277434258)
 for more details on how to clear only the template cache without losing other project settings.
-*(Personally I just nuke `.idea`, there isn't anything very important there AFAIAC).*
+*(Personally I just nuke `.idea`, there isn't anything very important there IMO).*
 
 ## Example Output
 
@@ -58,7 +58,7 @@ Get-ChildItem -Path "$SourceDir" -Include "*.template" -Recurse `
 
 # Sample Output
 
-The Copyright and the `XIST_API` would be replaced by your own project-specific settings.
+The Copyright and the `MY_API` would be replaced by your own project-specific settings.
 
 ## Actor
 
@@ -70,7 +70,7 @@ Creating a `MyActor` Actor will result in source like this:
 ### Actor Header
 
 ```c++
-// Copyright (c) 2024 xist.gg
+// Your copyright notice here
 
 #pragma once
 
@@ -81,7 +81,7 @@ Creating a `MyActor` Actor will result in source like this:
  * MyActor
  */
 UCLASS()
-class XIST_API AMyActor : public AActor
+class MY_API AMyActor : public AActor
 {
 	GENERATED_BODY()
 
@@ -94,7 +94,7 @@ public:
 ### Actor Source
 
 ```c++
-// Copyright (c) 2024 xist.gg
+// Your copyright notice here
 
 #include "MyActor.h"
 
@@ -118,7 +118,7 @@ Creating a `MyComponent` Actor Component will result in source like this:
 ### Actor Component Header
 
 ```c++
-// Copyright (c) 2024 xist.gg
+// Your copyright notice here
 
 #pragma once
 
@@ -129,7 +129,7 @@ Creating a `MyComponent` Actor Component will result in source like this:
  * MyComponent
  */
 UCLASS(meta=(BlueprintSpawnableComponent))
-class XIST_API UMyComponent : public UActorComponent
+class MY_API UMyComponent : public UActorComponent
 {
 	GENERATED_BODY()
 
@@ -142,7 +142,7 @@ public:
 ### Actor Component Source
 
 ```c++
-// Copyright (c) 2024 xist.gg
+// Your copyright notice here
 
 #include "MyComponent.h"
 
@@ -166,7 +166,7 @@ Creating a `MyInterface` Interface will result in source like this:
 ### Interface Header
 
 ```c++
-// Copyright (c) 2024 xist.gg
+// Your copyright notice here
 
 #pragma once
 
@@ -183,7 +183,7 @@ class UMyInterface : public UInterface
 /**
  * MyInterface Interface
  */
-class XIST_API IMyInterface
+class MY_API IMyInterface
 {
 	GENERATED_BODY()
 
@@ -195,7 +195,7 @@ public:
 ### Interface Source
 
 ```c++
-// Copyright (c) 2024 xist.gg
+// Your copyright notice here
 
 #include "MyInterface.h"
 
@@ -212,7 +212,7 @@ Creating a `MyObject` Object will result in source like this:
 ### Object Header
 
 ```c++
-// Copyright (c) 2024 xist.gg
+// Your copyright notice here
 
 #pragma once
 
@@ -223,7 +223,7 @@ Creating a `MyObject` Object will result in source like this:
  * MyObject
  */
 UCLASS()
-class XIST_API UMyObject : public UObject
+class MY_API UMyObject : public UObject
 {
 	GENERATED_BODY()
 
@@ -236,7 +236,7 @@ public:
 ### Object Source
 
 ```c++
-// Copyright (c) 2024 xist.gg
+// Your copyright notice here
 
 #include "MyObject.h"
 
