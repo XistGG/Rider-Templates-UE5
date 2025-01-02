@@ -1,1 +1,2 @@
+// Set Class defaults
 %PREFIXED_CLASS_NAME%::%PREFIXED_CLASS_NAME%(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());

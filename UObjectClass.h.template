@@ -14,8 +14,7 @@ class %CLASS_MODULE_API_MACRO%%PREFIXED_CLASS_NAME% : public %PREFIXED_BASE_CLAS
 	GENERATED_BODY()
 
 public:
-	// Set Class Defaults
-	%PREFIXED_CLASS_NAME%(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
+	%EVENTUAL_CONSTRUCTOR_DECLARATION%
 
 	%CLASS_PROPERTIES%
 	%CLASS_FUNCTION_DECLARATIONS%
