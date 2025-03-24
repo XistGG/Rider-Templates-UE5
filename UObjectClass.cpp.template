@@ -2,6 +2,10 @@
 
 %MY_HEADER_INCLUDE_DIRECTIVE%
 
-%EVENTUAL_CONSTRUCTOR_DEFINITION%
+// Set Class Defaults
+%PREFIXED_CLASS_NAME%::%PREFIXED_CLASS_NAME%(const FObjectInitializer& ObjectInitializer) 
+	: Super(ObjectInitializer)
+{
+}
 
 %ADDITIONAL_MEMBER_DEFINITIONS%
